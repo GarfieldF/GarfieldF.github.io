@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    
+
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+    <link href="styles.css" rel="stylesheet" type="text/css"></link>
+    <style>
+        .h1_block {
+            margin: 0 auto;
+            width: 850px;
+            margin-top: 30px;
+        }
+        
+        .main {
+            width: 400px;
+            margin-left: 20px auto;
+            margin-right: 20px auto;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgb(177, 177, 177);
+            background-color: #ffffff;
+        }
+    </style>
+    <title>Three-phase inverter</title>
+</head>
+
+
+<body>
+<p align="center">
+    <font size="6">TI Cup: National Undergraduate Electronics Design Contest - A micro-grid system</font>
+    <br></br>
+</p>
+<hr>
+
+</body>
+<img src="images/waves.jpg" width="100%" alt="Avatar" />
+<p align="center">Fig. Oscilloscope Graph of Three-phase AC Voltage</p>
+<table width="100%" align="center" cellpadding="10" style="max-width:1000px;">
+    <tr>
+        <td>
+            The contestants were required to design and make a micro-grid simulation system consisting of two three-phase inverters and other loads within four days and three nights. The system frame diagram is shown in Figure 2. The load is a three-phase symmetrical resistance connected by Y-type. 
+            <br>
+            1.1 Basic Requirements
+            <br>
+            (1) Close S and provide three-phase symmetrical AC power to the load with inverter 1 only. When the load line current RMS value is 2A, the line voltage RMS value is 24V±0.2V and the frequency is 50Hz±0.2Hz.
+            <br>
+            (2) Under the working conditions of basic requirement (1), the total harmonic distortion rate (THD) of AC bus voltage is not more than 3%.
+            <br>
+            (3) Under the working conditions of basic requirement (1), the efficiency η of inverter 1 is not less than 87%.
+            <br>
+            (4) When inverter 1 supplies power to the load and the load line current RMS value varies between 0 and 2A, the load regulation rate is less than 0.3%.
+            
+            <!-- 1.2 Power generation part
+            (1) Inverter 1 and Inverter 2 can jointly output power to the load, so that the load line current RMS value reaches 3A and the frequency is 50Hz±0.2Hz.
+            (2) When the effective value of load line current varies between 1~3A, the output power of inverter 1 and inverter 2 is kept as 1:1 distribution, and the absolute value of the difference between the output line currents of the two inverters is not more than 0.1A. The load adjustment rate is ≤0.3%.
+            (3) When the effective value of load line current varies between 1~3A, the output power of Inverter 1 and Inverter 2 can be automatically distributed within the specified range (ratio K is 1:2~2:1) according to the setting, and the absolute value of the difference between the two inverter output line current conversion values is not more than 0.1A. -->
+            
+         </td>
+    </tr>
+</table>
+
+<b>
+The KEY POINTS IS:
+</b>
+<p>
+    a) Voltage and current closed-loop control(PID).
+</p>
+<p>
+    b) Coordinate transformation Matrix(Clarke and Park Transforms).
+</p>
+<p>
+    c) Space Vector Pulse Width Modulation(SVPWM) and Sinusoidal Pulse Width Modulation(SPWM).
+</p>
+
+
+
+<img src="images/Question.png" width="100%" alt="Avatar" />
+<p align="center">Fig. Block diagram</p>
+<p>
+During testing, our system achieved excellent performance that far exceeded the basic requirements. The line voltage RMS value is 24.01V, the frequency is 49.98Hz, the total harmonic distortion rate (THD) of AC bus voltage is 0.69%, the efficiency η of inverter 1 is 91.12%.</p>
+<img src="images/STEP1.jpg" width="100%" alt="Avatar" />
+<p align="center">Fig. The vanilla version.</p>
+<img src="images/STEP2.jpg" width="100%" alt="Avatar" />
+<p align="center">Fig. The filtering.</p>
+<img src="images/STEP3.jpg" width="100%" alt="Avatar" />
+<p align="center">Fig. Voltage closed-loop Control.</p>
+<img src="images/display.jpg" width="100%" alt="Avatar" />
+<p align="center">Fig. Physical display</p>
+</html>
+<!-- https://blog.csdn.net/weixin_44908159/article/details/117190176
+https://blog.csdn.net/a18892061545/article/details/120234633
+https://bbs.nuedc-training.com.cn/thread-656-1-1.html
+https://bbs.nuedc-training.com.cn/forum.php?mod=viewthread&tid=623 -->
