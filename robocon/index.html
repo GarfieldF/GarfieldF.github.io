@@ -47,14 +47,23 @@ In the game, each team is given a few shuttlecocks and needs to design two robot
         I took responsibility for the omni-directional and Mecanum wheel chassis kinematics resolution and A* path planning to ensure precise and efficient robot movement. Furthermore, I implemented a QR code-based positioning system to facilitate the handover between the manual and automatic robots.
         And anothor work I did in the competition was to develope a graphical interface to display and debug real-time and target paths. 
 If the shuttlecock does not pass the ring, the automatic robot needs to return and get the next shuttlecock. I implemented this recognition requirement through processing the depth video calculated by the binocular camera.
-        In summary, I have done the following things：
-        Perception & Vision: Developed binocular vision detection algorithms on Nvidia TX2, achieving dynamic target recognition at a range of over 10 meters.
-
-        Localization & Control: Integrated Lidar, IMU, and Kalman filtering for global localization; implemented kinematic inverse solutions for omnidirectional/Mecanum wheels and triple-loop (position-velocity-current) control; developed trajectory planning logic based on A* algorithms and QR code guidance.
-
-        Decision-making & Simulation: Built simulation environments using Gazebo; conducted algorithmic pre-research to drive hardware iterations for next-generation quadruped robots.
     </td>
-  </tr>   
+  </tr>  
+    <tr>
+    <td>
+    In summary, I have done the following things:
+    </td>
+    </tr>
+<tr>
+    <td colspan="3" style="padding-top: 8px;">
+    
+      <strong>• Perception & Vision:</strong> Developed Nvidia TX2-based binocular vision algorithms for real-time dynamic object recognition at 10m+ range; implemented microsecond-level track prediction and Ackerman steering compensation.<br />
+      
+      <strong>• Localization & Control:</strong> Integrated Lidar, IMU, and Kalman filtering for global localization; implemented kinematic inverse solutions for omnidirectional/Mecanum wheels with triple-loop (Pos/Vel/Cur) control; engineered A* trajectory planning with QR-code visual guidance.<br />
+      
+      <strong>• Decision & Simulation:</strong> Established Gazebo simulation frameworks for pre-research, driving hardware iterations for next-generation legged robot prototypes.
+    </td>
+  </tr>
 </table>
 
 <table width="100%" align="center" cellpadding="10" style="max-width:1000px;">
