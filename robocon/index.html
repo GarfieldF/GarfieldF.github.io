@@ -44,7 +44,8 @@
 <br>
 In the game, each team is given a few shuttlecocks and needs to design two robots, one manual and one automatic robot. The manual robot needs to hand the shuttlecocks to the automatic robot, which attempts to throw the shuttlecocks through the rings (unlike the traditional game, there are three rings at various heights in this game). The winner can be achieved by points, or by immediate KO if the robots successfully throw the shuttlecocks through three rings, and for the highest ring, the shuttlecock lands on a golden disk on the opposite side.
 <br>
-        What I did in the competition was to calculate and generate the path of the automatic robot and write a graphical interface program to display and debug the real path.
+        I took responsibility for the omni-directional and Mecanum wheel chassis kinematics resolution and A* path planning to ensure precise and efficient robot movement. Furthermore, I implemented a QR code-based positioning system to facilitate the handover between the manual and automatic robots.
+        And anothor work I did in the competition was to develope a graphical interface to display and debug real-time and target paths. 
 If the shuttlecock does not pass the ring, the automatic robot needs to return and get the next shuttlecock. I implemented this recognition requirement through processing the depth video calculated by the binocular camera.
     </td>
   </tr>   
